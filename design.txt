@@ -1,0 +1,34 @@
+class :-
+    Address
+        - country: string
+        - state: string
+        - city: string
+        - street address: string
+        - postalCode: string
+
+    Person
+        - firstName: String
+        - lastName: String
+        - dateOfBirth: date
+        - address: Address
+        - phoneNumber: String
+
+    Student(Person)
+        - isPartTime(): boolean
+        - international: boolean
+        - isOnProbation(): boolean
+
+    Professor(Person)
+        - salary: float
+
+    Course
+        - name: string
+        - code: string
+        - minStudents: int
+        - maxStudents: int
+        - isCancelled(): boolean
+
+    Enrol
+        - grade: int
+        - student: Student
+        - course: Course
